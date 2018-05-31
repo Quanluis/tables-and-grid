@@ -1,0 +1,41 @@
+td {
+    background-color: grey;
+}
+th {
+    background-color: grey;
+}
+caption {
+   background-color: grey;
+}
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px minmax(200px, 1fr) 100px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "nav footer footer"
+ 
+}
+header {
+  background-color: blue;
+  grid-area: header;
+}
+main {
+background-color: lightblue;
+grid-area: main;
+}
+nav {
+    background: lightcoral;
+    grid-area: nav;
+}
+footer {
+    background-color: lawngreen;
+    grid-area: footer;
+}
+aside {
+    background-color: aqua;
+    grid-area: aside;
+}
